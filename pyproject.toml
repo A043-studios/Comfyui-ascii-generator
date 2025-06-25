@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "comfyui-ascii-generator"
+version = "1.0.0"
+description = "ASCII art generator for ComfyUI with multi-language character set support"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "MCP ComfyUI Framework"},
+]
+keywords = ["comfyui", "ascii", "art", "image-processing", "custom-nodes"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Artistic Software",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "torch>=1.9.0",
+    "numpy>=1.21.0",
+    "Pillow>=9.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/comfyui-ascii-generator"
+Repository = "https://github.com/YOUR_USERNAME/comfyui-ascii-generator"
+Issues = "https://github.com/YOUR_USERNAME/comfyui-ascii-generator/issues"
+Documentation = "https://github.com/YOUR_USERNAME/comfyui-ascii-generator#readme"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+    "black>=22.0",
+    "flake8>=4.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["*"]
+exclude = ["tests*", "examples*", "assets*"]
